@@ -7,7 +7,7 @@ def gaussCluster(center, stdDev, count=50):
         a=[(random.gauss(center[0], stdDev),random.gauss(center[1], stdDev)) for _ in range(count)]
         return a;
 
-# generate and store tow groups of random number by <-4,0> of mean, 1 of variance and <4,0> of mean and 1 of variance
+# test: generate and store tow groups of random number by <-4,0> of mean, 1 of variance and <4,0> of mean and 1 of variance
 def makeDummyData():
     return gaussCluster((-4,0), 1) + gaussCluster((4,0), 1)
 
